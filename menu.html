@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="MainController.js"></script>
+    
+
+</head>
+<body ng-controller="MenuCtrl">
+        <div class="row outer-box">
+          <div class="col-sm-3">
+              <ul class="nav nav-stacked">
+                  <li ng-repeat="menu in menus"><a href="{{menu.action}}">{{menu.name}}</a></li>
+<!--                <li><a href="{{menu.action}}">{{menu.title}}</a></li>-->
+              </ul>
+              
+            </div>
+          </div>
+      
+
+</body>
+</html>
